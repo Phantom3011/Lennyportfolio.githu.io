@@ -1,0 +1,219 @@
+/* Reset CSS styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Syncopate;
+  background-color: #DADAD8;
+}
+
+/* Navigation styles */
+nav {
+  background: #1E1E1E;
+  height: 80px;
+  width: 100%;
+  background-repeat: repeat;
+}
+
+/* Logo styles */
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+/* Navigation list styles */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* Active and hover styles for navigation links */
+a.active, a:hover {
+  background: #E3FF00;
+  transition:.5s;
+}
+
+/* Checkbox button styles */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Checkbox styles */
+#check {
+  display: none;
+}
+
+/* Media query for screen sizes below 952px */
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screen sizes below 858px */
+@media (max-width: 858px) {
+ .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #E3FF00;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* Additional styles for header navigation */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--bgDark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+header nav.left a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all.2s ease;
+}
+
+header nav.left a:hover {
+  color: var(--primary);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav.logo {
+  margin-right: 3rem;
+}
+     /* start of footer */
+    .facebook-icon {
+      background-image: url('images/face.png');
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+    
+    .instagram-icon {
+      background-image: url('images/ins.png');
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+    
+    .linkedin-icon {
+      background-image: url('images/like.png');
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+    .footer-content {
+      /* Display the footer content as a block */
+      display: block;
+      /* Set the overflow to hidden */
+      overflow: hidden;
+    }
+    .footer-area-bottom {
+      /* Set the background color to #1E1E1E */
+      background: #1E1E1E none repeat scroll 0 0;
+      /* Add padding to the top and bottom sides */
+      padding: 15px 0;
+      text-align: center;
+    }
+    
+    .copyright-text a:hover {
+      /* Set the text decoration to underline on hover */
+      text-decoration: underline;
+      /* Set the color to #3EC1D5 on hover */
+      color: #3EC1D5;
+    }
+    
+    .copyright-text a {
+      /* Set the color to #444 */
+      color: #444;
+      text-align: center;
+    }
+    
+    .copyright > p {
+      /* Set the margin bottom to 0 */
+      margin-bottom: 0;
+      /* Set the color to #444 */
+      color: #444;
+    }
+    
+    .credits {
+      /* Add padding to the top side */
+      padding-top: 5px;
+      /* Set the text alignment to center */
+      text-align: center;
+    }
+    
+    .credits a {
+      /* Set the color to #000 */
+      color: #000;
+    }
+      /* end of footer */     

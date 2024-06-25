@@ -1,0 +1,151 @@
+<!-- HTML document structure starts here -->
+<html lang="en">
+  <!-- Head section of the HTML document -->
+  <head>
+    <!-- Character encoding of the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Leveque Portfolio</title>
+    <!-- Link to external stylesheet (main.css) -->
+    <link rel="stylesheet" href="CSS/gallery.css">
+  </head>
+  <!-- Body section of the HTML document -->
+  <body>
+    <!-- Navigation menu -->
+    <nav>
+      <!-- Checkbox for toggling the navigation menu -->
+      <input type="checkbox" id="check">
+      <!-- Label for the checkbox, used to toggle the menu -->
+      <label for="check" class="checkbtn">
+        <!-- Font Awesome icon for the menu toggle button -->
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- Logo of the website -->
+      <label class="logo">LK PORTFOLIO</label>
+      <!-- Unordered list of navigation menu items -->
+      <ul>
+        <!-- List item with a link to the home page -->
+        <li><a class="active" href="web.html">Home</a></li>
+        <!-- List item with a link to the about page -->
+        <li><a href="about.html">About</a></li>
+        <!-- List item with a link to the services page -->
+        <li><a href="service.html">Services</a></li>
+        <!-- List item with a link to the contact page -->
+        <li><a href="contact.html">Contact</a></li>
+        <!-- List item with a link to the gallery page -->
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+   
+   <!-- Start of photo grid -->
+<style>
+  .gallery-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* adjust the number of columns as needed */
+     grid-gap: 10px; /* add space between grid items */
+   }
+ 
+  .gallery {
+     margin: 5px;
+     border: 1px solid #ccc;
+   }
+ 
+  .gallery:hover {
+     border: 1px solid #777;
+   }
+ 
+  .gallery img {
+     width: 100%; /* set image width to 100% of the container */
+     height: 500px; /* set a fixed height for the images */
+     object-fit: cover; /* ensure the image is scaled to fit the container */
+   }
+ 
+  .desc {
+     padding: 15px;
+     text-align: center;
+   }
+ </style>
+ 
+ <div class="gallery-container">
+   <div class="gallery">
+     <a target="_blank" href="images/social media-01.jpg">
+       <img src="images/social media-01.jpg" alt="Cinque Terre">
+     </a>
+     <div class="desc">Branding of coffee </div>
+   </div>
+ 
+   <div class="gallery">
+     <a target="_blank" href="images/social media-02.jpg">
+       <img src="images/social media-02.jpg" alt="Forest">
+     </a>
+     <div class="desc">User interface design</div>
+   </div>
+ 
+   <div class="gallery">
+     <a target="_blank" href="images/social media-03.jpg">
+       <img src="images/social media-03.jpg" alt="Forest">
+     </a>
+     <div class="desc">Logo design</div>
+   </div>
+ </div>
+ <!-- End of photo grid -->
+    
+ <span>
+ <!-- Start of photo 2 grid -->
+ <div class="gallery-container">
+   <div class="gallery">
+     <a target="_blank" href="images/social media-04.jpg">
+       <img src="images/social media-04.jpg" alt="Cinque Terre">
+     </a>
+     <div class="desc">Logo design</div>
+   </div>
+ 
+   <div class="gallery">
+     <a target="_blank" href="images/social media-05.jpg">
+       <img src="images/social media-05.jpg" alt="Forest">
+     </a>
+     <div class="desc">Business card design</div>
+   </div>
+ 
+   <div class="gallery">
+     <a target="_blank" href="images/social media-06.jpg">
+       <img src="images/social media-06.jpg" alt="Forest">
+     </a>
+     <div class="desc">Clothing brand design</div>
+   </div>
+ </div>
+ <!-- End of photo 2 grid -->
+</span>
+<!-- Start Footer bottom Area -->
+<footer>
+  <div class="footer-area-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="social-media-icons">
+            <li><a href="https://www.facebook.com/kurt.leveque.16/" class="facebook-icon"></a></li>
+            <li><a href="https://www.instagram.com/kurt_lvq_/" class="instagram-icon"></a></li>
+            <li><a href="www.linkedin.com/in/leveque-lenny-kurt-a72447314" class="linkedin-icon"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="credits">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a>
+          </div>
+          <div class="copyright text-center">
+            <p>
+              &copy; Copyright 2024. | <strong><a href="#">Leveque Portfolio </a></strong> | All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer bottom Area -->
+  </body>
+</html>
